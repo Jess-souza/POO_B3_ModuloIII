@@ -17,8 +17,8 @@ public class Internacoes {
     }
 
 
-
     public void mostraCachorrosInternados() {
+        System.out.println("-------------------------DOGS INTERNADOS-------------------------");
         for (Cachorro cachorro : cachorrosInternados) {
             if (Objects.nonNull(cachorro)) {
                 System.out.println(cachorro);

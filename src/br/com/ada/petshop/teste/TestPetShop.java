@@ -1,5 +1,6 @@
 package br.com.ada.petshop.teste;
 
+import br.com.ada.petshop.businessobject.CachorroRepository;
 import br.com.ada.petshop.businessobject.Internacoes;
 import br.com.ada.petshop.modelo.Cachorro;
 import br.com.ada.petshop.modelo.Dono;
@@ -7,7 +8,6 @@ import br.com.ada.petshop.modelo.Endereco;
 
 public class TestPetShop {
     public static void main(String[] args) {
-
         Endereco endereco1 = new Endereco("Zodiaco", "227", "06528075", "Jardins", "SP");
         Endereco endereco2 = new Endereco("Alfeu de Oliveira", "353", "87943923", "Fazendinha", "SP");
         Endereco endereco3 = new Endereco("Tico-Tico", "21", "3223342", "Laranjas", "SP");
@@ -31,17 +31,16 @@ public class TestPetShop {
         cachorro3.setNome("Bolinha");
         cachorro3.setRaca("Pastor Alemão");
         cachorro3.setIdade(2);
-        cachorro3.setEstaDoente(true);
+        cachorro3.setEstaDoente(false);
 
-        System.out.println(cachorro1);
-        System.out.println(cachorro2);
-        System.out.println(cachorro3);
+        CachorroRepository cadastrar = new CachorroRepository();
+        cadastrar.cadastro(cachorro1);
+        cadastrar.cadastro(cachorro2);
+        cadastrar.cadastro(cachorro3);
+        cadastrar.mostraCachorrosCadastrados();
 
         Internacoes internacoes = new Internacoes();
         internacoes.internar(cachorro1);
-        internacoes.internar(cachorro3);
-
         internacoes.mostraCachorrosInternados();
-
     }
 }
