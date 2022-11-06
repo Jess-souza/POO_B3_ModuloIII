@@ -59,8 +59,6 @@ public class Dono {
         return "Dono{" +
                 "id=" + id +
                 ", nome='" + nome + '\'' +
-                ", cpf='" + cpf + '\'' +
-                ", email='" + email + '\'' +
                 ", endereco=" + endereco +
                 '}';
     }

@@ -5,5 +5,9 @@ public class Gato extends Animais{
         super(dono);
     }
 
-
+    @Override
+    public String toString() {
+        return "Gato" +
+        super.toString();
+    }
 }

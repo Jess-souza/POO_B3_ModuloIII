@@ -1,6 +1,6 @@
 package br.com.ada.petshop.modelo;
 
-public class Animais {
+public abstract class Animais {
     private int id;
     private String nome;
     private String raca;
@@ -68,7 +68,7 @@ public class Animais {
 
     @Override
     public String toString() {
-        return "Animais{" +
+        return " {" +
                 "id=" + id +
                 ", nome='" + nome + '\'' +
                 ", raca='" + raca + '\'' +
