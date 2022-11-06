@@ -1,10 +1,10 @@
 package br.com.ada.petshop.modelo;
 
 public class Cachorro {
+    private int id;
     private String nome;
     private String raca;
     private int idade;
-    private static int contador;
     private boolean estaDoente;
     private Dono dono;
 
@@ -50,10 +50,6 @@ public class Cachorro {
         return estaDoente;
     }
 
-    public static int getContador() {
-        return contador;
-    }
-
     public Dono getDono() {
         return dono;
     }
@@ -62,10 +58,19 @@ public class Cachorro {
         this.dono = dono;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     @Override
     public String toString() {
         return "Cachorro{" +
-                "nome='" + nome + '\'' +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
                 ", raca='" + raca + '\'' +
                 ", idade=" + idade +
                 ", estaDoente=" + estaDoente +

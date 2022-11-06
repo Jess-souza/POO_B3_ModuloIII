@@ -1,12 +1,11 @@
 package br.com.ada.petshop.modelo;
 
 public class Dono {
+    private int id;
     private String nome;
     private String cpf;
     private String email;
     private Endereco endereco;
-
-
 
     public String getNome() {
         return nome;
@@ -45,10 +44,23 @@ public class Dono {
         this.endereco = endereco;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        if (this.id == 0) {
+            this.id = id;
+        }
+    }
+
     @Override
     public String toString() {
         return "Dono{" +
-                "nome='" + nome + '\'' +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", email='" + email + '\'' +
                 ", endereco=" + endereco +
                 '}';
     }

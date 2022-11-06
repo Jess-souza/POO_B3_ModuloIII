@@ -27,7 +27,7 @@ public class TestPetShop {
         cachorro2.setRaca("Pitbull");
         cachorro2.setIdade(4);
 
-        Cachorro cachorro3 = new Cachorro(Jessiany);
+        Cachorro cachorro3 = new Cachorro(Jessica);
         cachorro3.setNome("Bolinha");
         cachorro3.setRaca("Pastor Alemão");
         cachorro3.setIdade(2);
