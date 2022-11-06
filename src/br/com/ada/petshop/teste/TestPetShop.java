@@ -1,10 +1,11 @@
 package br.com.ada.petshop.teste;
 
-import br.com.ada.petshop.businessobject.CachorroRepository;
+import br.com.ada.petshop.businessobject.AnimaisRepository;
 import br.com.ada.petshop.businessobject.Internacoes;
 import br.com.ada.petshop.modelo.Cachorro;
 import br.com.ada.petshop.modelo.Dono;
 import br.com.ada.petshop.modelo.Endereco;
+import br.com.ada.petshop.modelo.Gato;
 
 public class TestPetShop {
     public static void main(String[] args) {
@@ -27,20 +28,19 @@ public class TestPetShop {
         cachorro2.setRaca("Pitbull");
         cachorro2.setIdade(4);
 
-        Cachorro cachorro3 = new Cachorro(Jessica);
-        cachorro3.setNome("Bolinha");
-        cachorro3.setRaca("Pastor Alemão");
-        cachorro3.setIdade(2);
-        cachorro3.setEstaDoente(false);
+        Gato gato = new Gato(Jessica);
+        gato.setNome("Miau");
+        gato.setRaca("Vira lata");
+        gato.setIdade(3);
 
-        CachorroRepository cadastrar = new CachorroRepository();
+        AnimaisRepository cadastrar = new AnimaisRepository();
         cadastrar.cadastro(cachorro1);
         cadastrar.cadastro(cachorro2);
-        cadastrar.cadastro(cachorro3);
-        cadastrar.mostraCachorrosCadastrados();
+        cadastrar.cadastro(gato);
+        cadastrar.mostraAnimaisCadastrados();
 
         Internacoes internacoes = new Internacoes();
         internacoes.internar(cachorro1);
-        internacoes.mostraCachorrosInternados();
+        internacoes.mostraAnimaisInternados();
     }
 }
