@@ -3,3 +3,17 @@ W
 'src/br/com/ada/petshop/heranca/Ave.java,9/9/99ffbdec1c6e5d09ba58e09b1a27f1bb85e3fb91
 ]
 -src/br/com/ada/petshop/heranca/Andorinha.java,3/2/3265e4ca73ea0797a7f18a8bea8e8fb24ab5e8eb
+c
+3src/br/com/ada/petshop/heranca/RestaurarAsaAve.java,8/d/8d4dbd729b228590f948ac9a25356f5898bc46e1
+l
+<src/br/com/ada/petshop/businessobject/AnimaisRepository.java,f/4/f4982c4e973ae50e817ae1145f8b9f2ede097a5f
+[
++src/br/com/ada/petshop/heranca/Pinguim.java,3/3/33b1c70b42caed0e0ce567fe52b7a8ebb664021a
+\
+,src/br/com/ada/petshop/heranca/Papagaio.java,6/c/6c12a6129faf7bcee3aff24fec73905e0d3f23f4
+]
+-src/br/com/ada/petshop/heranca/Garrincha.java,c/1/c1ceb9254a802dddd3a16ac63d87581434b55983
+_
+/src/br/com/ada/petshop/heranca/AvesQueVoam.java,e/6/e6564d88d27adbb0f4c2d8e1e472d5f3c2ebb626
+l
+<src/br/com/ada/petshop/heranca/TesteHerancaPolimorfismo.java,2/e/2e8e8f4abf7f5f1314246fda0fa2c8f2910e75b3

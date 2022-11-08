@@ -1,13 +1,27 @@
 package br.com.ada.petshop.modelo;
 
-public class Gato extends Animais{
+import br.com.ada.petshop.enumeracao.EnumRacaGato;
+
+public class Gato extends Animal {
+
+    private EnumRacaGato raca;
+
     public Gato(Dono dono) {
         super(dono);
     }
 
+    public EnumRacaGato getRaca() {
+        return raca;
+    }
+
+    public void setRaca(EnumRacaGato raca) {
+        this.raca = raca;
+    }
+
     @Override
     public String toString() {
-        return "Gato" +
-        super.toString();
+        return "Gato: " +
+                "raca=" + raca +
+                super.toString();
     }
 }

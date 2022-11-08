@@ -1,14 +1,13 @@
 package br.com.ada.petshop.modelo;
 
-public abstract class Animais {
+public abstract class Animal {
     private int id;
     private String nome;
-    private String raca;
     private int idade;
     private boolean estaDoente;
     private Dono dono;
 
-    public Animais(Dono dono) {
+    public Animal(Dono dono) {
         this.dono = dono;
     }
 
@@ -18,14 +17,6 @@ public abstract class Animais {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public String getRaca() {
-        return raca;
-    }
-
-    public void setRaca(String raca) {
-        this.raca = raca;
     }
 
     public int getIdade() {
@@ -71,7 +62,6 @@ public abstract class Animais {
         return " {" +
                 "id=" + id +
                 ", nome='" + nome + '\'' +
-                ", raca='" + raca + '\'' +
                 ", idade=" + idade +
                 ", estaDoente=" + estaDoente +
                 ", dono=" + dono +
