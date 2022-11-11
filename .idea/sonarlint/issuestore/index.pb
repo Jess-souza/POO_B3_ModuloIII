@@ -15,9 +15,3 @@ _
 /src/br/com/ada/petshop/heranca/AvesQueVoam.java,e/6/e6564d88d27adbb0f4c2d8e1e472d5f3c2ebb626
 l
 <src/br/com/ada/petshop/heranca/TesteHerancaPolimorfismo.java,2/e/2e8e8f4abf7f5f1314246fda0fa2c8f2910e75b3
-]
--src/br/com/ada/petshop/teste/TestPetShop.java,7/3/73af9d9aacb12b0e42f183fba6c09e4d0c916dd6
-f
-6src/br/com/ada/petshop/businessobject/Internacoes.java,3/5/351bc73bec2e17e75fb155a97cdc3751acb9ddd4
-g
-7src/br/com/ada/petshop/repository/AnimalRepository.java,b/9/b9fca2366947edf9b7c14d5ce8caecd51041366a

@@ -1,12 +1,13 @@
 package br.com.ada.petshop.modelo;
 
+import br.com.ada.petshop.enumeracao.TipoAnimalEnum;
+
 public abstract class Animal {
     private int id;
     private String nome;
     private int idade;
-    private boolean estaDoente;
     private Dono dono;
-
+    private TipoAnimalEnum tipoAnimal;
     public Animal(Dono dono) {
         this.dono = dono;
     }
@@ -33,14 +34,6 @@ public abstract class Animal {
         }
     }
 
-    public void setEstaDoente(boolean estaDoente) {
-        this.estaDoente = estaDoente;
-    }
-
-    public boolean getEstaDoente() {
-        return estaDoente;
-    }
-
     public Dono getDono() {
         return dono;
     }
@@ -57,13 +50,20 @@ public abstract class Animal {
         this.id = id;
     }
 
+    public void setTipoAnimal(TipoAnimalEnum tipoAnimal) {
+        this.tipoAnimal = tipoAnimal;
+    }
+    public TipoAnimalEnum getTipoAnimal() {
+        return tipoAnimal;
+    }
+
     @Override
     public String toString() {
         return " {" +
                 "id=" + id +
+                ", tipoAnimal=" + tipoAnimal +
                 ", nome='" + nome + '\'' +
                 ", idade=" + idade +
-                ", estaDoente=" + estaDoente +
                 ", dono=" + dono +
                 '}';
     }

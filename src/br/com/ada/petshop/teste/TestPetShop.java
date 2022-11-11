@@ -2,6 +2,7 @@ package br.com.ada.petshop.teste;
 
 import br.com.ada.petshop.enumeracao.EnumRacaCachorro;
 import br.com.ada.petshop.enumeracao.EnumRacaGato;
+import br.com.ada.petshop.enumeracao.TipoAnimalEnum;
 import br.com.ada.petshop.repository.AnimalRepository;
 import br.com.ada.petshop.businessobject.Internacoes;
 import br.com.ada.petshop.modelo.*;
@@ -32,6 +33,10 @@ public class TestPetShop {
         gato.setRaca(EnumRacaGato.SIAMES);
         gato.setIdade(3);
         gato.setEstaDoente(true);
+
+        Passaro passaro = new Passaro(Jessica);
+        passaro.setIdade(1);
+        passaro.setTipoAnimal(TipoAnimalEnum.PASSARO);
 
         AnimalRepository cadastrar = new AnimalRepository();
         cadastrar.cadastro(cachorro1);
