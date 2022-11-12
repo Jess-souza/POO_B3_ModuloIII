@@ -1,5 +1,6 @@
 package br.com.ada.petshop.teste;
 
+import br.com.ada.petshop.autenticacao.AutenticacaoRepository;
 import br.com.ada.petshop.enumeracao.EnumRacaCachorro;
 import br.com.ada.petshop.enumeracao.EnumRacaGato;
 import br.com.ada.petshop.enumeracao.TipoAnimalEnum;
@@ -16,6 +17,14 @@ public class TestPetShop {
         Dono Jessica = new Dono("Jessica", endereco1);
         Dono Franklin = new Dono("Franklin", endereco2);
         Dono Jessiany = new Dono("Jessiany", endereco3);
+
+        Veterinario kito = new Veterinario("Franklin", endereco1);
+        kito.setLogin("user");
+        kito.setSenha("123");
+
+        Atendente atendente = new Atendente("Jessica", endereco2);
+        atendente.setLogin("kito");
+        atendente.setSenha("123");
 
         Cachorro cachorro1 = new Cachorro(Jessica);
         cachorro1.setNome("Totó");
@@ -48,5 +57,9 @@ public class TestPetShop {
         internacoes.internar(cachorro1);
         internacoes.internar(gato);
         internacoes.mostraAnimaisInternados();
+
+        AutenticacaoRepository autenticacaoRepository = new AutenticacaoRepository();
+        autenticacaoRepository.autentica(kito);
+        autenticacaoRepository.autentica(atendente);
     }
 }

@@ -1,6 +1,9 @@
 package br.com.ada.petshop.autenticacao;
 
+import br.com.ada.petshop.modelo.Autenticavel;
 import br.com.ada.petshop.modelo.Pessoa;
+
+import java.util.Objects;
 
 public class AutenticacaoRepository {
 
@@ -20,7 +23,15 @@ public class AutenticacaoRepository {
     private String loginGravadoNoBanco = "user";
     private String senhaGravadaNoBanco = "123";
 
-    public void autentica(Pessoa pessoa){
+    public void autentica(Autenticavel autenticavel) {
+        boolean loginValido = Objects.equals(autenticavel.getLogin(), loginGravadoNoBanco);
+        boolean senhaValida = Objects.equals(autenticavel.getSenha(), senhaGravadaNoBanco);
+
+        if (loginValido && senhaValida) {
+            System.out.println("Acesso liberado");
+        } else {
+            System.err.println("Login ou senha incorreto");
+        }
         // obtenha o login e a senha do autenticavel
         // faça a logica de autenticação, comparando com o login e senha acima
         // se autenticado, segue o fluxo,
