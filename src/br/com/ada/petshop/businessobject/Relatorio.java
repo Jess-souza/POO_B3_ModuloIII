@@ -10,7 +10,7 @@ public class Relatorio<T> {
     public void geraRelatorioEmGrupo(List<T> lista) {
         System.out.println("-----------------RELATORIO COMPLETO--------------------");
         for (T t : lista) {
-            System.out.println(lista);
+            System.out.println(t);
         }
     }
 

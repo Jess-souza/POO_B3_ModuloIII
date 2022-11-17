@@ -16,16 +16,14 @@ public class TesteRelatorio {
         Gato gato = new Gato(Jessica);
         gato.setNome("Miau");
 
-        Relatorio<Animal> relatorioAnimais = new Relatorio<>();
+        Relatorio<Animal> relatorioAnimais = new Relatorio();
 
         relatorioAnimais.geraRelatorioUnico(cachorro);
 
         List<Animal> animais = List.of(cachorro, gato);
         relatorioAnimais.geraRelatorioEmGrupo(animais);
 
-        Relatorio<Pessoa> relatorioPessoas = new Relatorio<>();
+        Relatorio<Pessoa> relatorioPessoas = new Relatorio();
         relatorioPessoas.geraRelatorioUnico(atendente);
-
-
     }
 }
