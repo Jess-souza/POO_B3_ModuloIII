@@ -1,6 +1,7 @@
 package br.com.ada.petshop.teste;
 
 import br.com.ada.petshop.autenticacao.AutenticacaoRepository;
+import br.com.ada.petshop.businessobject.Relatorio;
 import br.com.ada.petshop.enumeracao.EnumRacaCachorro;
 import br.com.ada.petshop.enumeracao.EnumRacaGato;
 import br.com.ada.petshop.enumeracao.TipoAnimalEnum;
@@ -61,5 +62,6 @@ public class TestPetShop {
         AutenticacaoRepository autenticacaoRepository = new AutenticacaoRepository();
         autenticacaoRepository.autentica(kito);
         autenticacaoRepository.autentica(atendente);
+
     }
 }
