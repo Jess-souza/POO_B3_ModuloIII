@@ -29,8 +29,6 @@ _
 .src/br/com/ada/petshop/modelo/Veterinario.java,a/e/aedfcb7e1fd2aa7d6f929d101e918706a014997a
 \
 ,src/br/com/ada/petshop/modelo/Atendente.java,7/0/7051911b7bc504f24b8478b0c5da2ed499b6957e
-]
--src/br/com/ada/petshop/teste/TestPetShop.java,7/3/73af9d9aacb12b0e42f183fba6c09e4d0c916dd6
 l
 <src/br/com/ada/petshop/exemplo/generics/TesteImpressora.java,8/a/8a45d27dfdb8da2e45ab6c649533704439832a62
 g

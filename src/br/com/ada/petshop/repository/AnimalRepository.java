@@ -1,5 +1,6 @@
 package br.com.ada.petshop.repository;
 
+import br.com.ada.petshop.businessobject.EmailService;
 import br.com.ada.petshop.modelo.Animal;
 
 import java.util.ArrayList;
@@ -22,6 +23,8 @@ public class AnimalRepository {
             // cadastro[count] = animal;
             //count++;
             cadastro.add(animal);
+            EmailService emailService= new EmailService();
+            emailService.enviaEmailDeBoasVindas(animal);
         } else {
             System.out.println("O animal não pode ser null ou sem dono");
         }
@@ -52,6 +55,7 @@ public class AnimalRepository {
             cadastro = animalCadastrados2;
         }
     }*/
+
 
     public void mostraAnimaisCadastrados() {
         System.out.println("-------------------------ANIMAIS CADASTRADOS-------------------------");
