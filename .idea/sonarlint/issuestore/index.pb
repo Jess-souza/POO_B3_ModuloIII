@@ -19,8 +19,6 @@ e
 5src/br/com/ada/petshop/enumeracao/TipoAnimalEnum.java,7/1/7138deea89c7e2fc7e454936093c0b75b5bb8b7e
 Z
 *src/br/com/ada/petshop/modelo/Passaro.java,e/e/eeb7970270880a7b8a9ffaad0caed7ba3a4f7be3
-g
-7src/br/com/ada/petshop/repository/AnimalRepository.java,b/9/b9fca2366947edf9b7c14d5ce8caecd51041366a
 c
 3src/br/com/ada/petshop/enumeracao/EnumRacaGato.java,b/3/b3ceb5a929a18ac2243e7f18e76848c95514de2b
 g
@@ -41,8 +39,6 @@ j
 :src/br/com/ada/petshop/exemplo/generics/TesteGenerics.java,4/1/41e62a928fdfa9b459fd0c19ff6f041edf6a8295
 o
 ?src/br/com/ada/petshop/autenticacao/AutenticacaoRepository.java,f/6/f67f4a1b7a6d752543d57e45317f841f59899eba
-f
-6src/br/com/ada/petshop/businessobject/Internacoes.java,3/5/351bc73bec2e17e75fb155a97cdc3751acb9ddd4
 Y
 )src/br/com/ada/petshop/modelo/Animal.java,d/5/d57583025418ccbf2003c864a9195db7aec2c00c
 [
