@@ -1,14 +1,13 @@
 package br.com.ada.petshop.repository;
 
-public class ConexaoOracle implements Conexao{
-
-    private String user = "adm";
-    private String password = "123";
-    private String urlDeConexao = "jdbc:oracle:thin:banco";
+public class ConexaoMySQL implements Conexao {
+    private String user = "adm2";
+    private String password = "321";
+    private String urlDeConexao = "jdbc:mysql:thin:banco";
 
     @Override
     public String toString() {
-        return "ConexaoOracle{" +
+        return "ConexaoMySQL{" +
                 "user='" + user + '\'' +
                 ", password='" + password + '\'' +
                 ", urlDeConexao='" + urlDeConexao + '\'' +

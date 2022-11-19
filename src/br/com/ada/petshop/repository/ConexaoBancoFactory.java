@@ -1,14 +1,14 @@
 package br.com.ada.petshop.repository;
 
 public class ConexaoBancoFactory {
-    private ConexaoOracle conexaoOracle;
+    private Conexao conexao;
 
-    public ConexaoBancoFactory(){
-        this.conexaoOracle = new ConexaoOracle();
+    public ConexaoBancoFactory(Conexao conexao){
+        this.conexao = conexao;
     }
 
-    public ConexaoOracle getConexao() {
-        return conexaoOracle;
+    public Conexao getConexao() {
+        return conexao;
     }
 }
 

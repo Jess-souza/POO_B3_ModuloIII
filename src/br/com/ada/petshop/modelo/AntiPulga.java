@@ -1,26 +1,27 @@
 package br.com.ada.petshop.modelo;
 
-public class AntiPulga implements Produto{
+public class AntiPulga implements ProdutoComBula {
 
     private String fornecedor;
     private String bula;
 
     @Override
     public String getFornecedor() {
-        return this.fornecedor;
+        return null;
+    }
+
+    @Override
+    public void setFornecedor(String fornecedor) {
+
     }
 
     @Override
     public String getBula() {
-        return this.bula;
+        return null;
     }
-    @Override
-    public void setFornecedor(String fornecedor) {
-        this.fornecedor = fornecedor;
-    }
+
     @Override
     public void setBula(String bula) {
-        this.bula = bula;
     }
 
     @Override

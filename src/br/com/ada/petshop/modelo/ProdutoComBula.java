@@ -1,7 +1,6 @@
 package br.com.ada.petshop.modelo;
 
-public interface Produto {
-
+public interface ProdutoComBula {
     String getFornecedor();
 
     void setFornecedor(String fornecedor);
